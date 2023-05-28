@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.fondo{
+  background-image: url(/img/fondo-textura-hormigon-negro_53876-145151.webp);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel{
+  background-color: gray;
+  height: 53%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
+}
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.perfil{
+    height: 50%;
+    width: 30%;
+  border-radius: 20%;
+  border: 2px 2 px solid black;
+  margin-top: 2vh;
+}
+
+img{
+  transition-duration: 3s;
+  border-radius: 60%;
+  border: 3px solid black;
+  padding: 2px;
+  height: 70%;
+}
+
+img:hover{
+  transform:scale(1.2);
+  transition-duration: 0.6s;
+}
+
+h1{
+  transition-duration: 1s;
+  font-size: 7vh;
+}
+
+h1:hover{
+  transform:scale(1.2);
+  transition-duration: 1s;
+}
+
+.menu{
+  width: 18vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  transition-duration: 1.5s;
+}
+a:hover{
+  color: #f28206 ;
+  transition-duration: 0.3s;
+}
+
+.contato{
+  display: flex;
+  justify-content: space-around ;
+  width: 30%;
+  height: 20%;
+}
+
+
+
+
+
+
