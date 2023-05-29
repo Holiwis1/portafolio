@@ -1,228 +1,158 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    
-    margin: 0;
-    padding: 0;
-   background-image: url(/img/fondo-textura-hormigon-negro_53876-145151.webp);
-  }
-   header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(104, 95, 95);
-   padding-bottom: 2%;
-    
-  
-    
-  }
-  
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .botones{
-    padding:40px 0 ;
-    background-color:rgb(104, 95, 95) ;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333333;
+}
 
-  .inicio {
-    
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inicio,
+.proyectos,
+.contacto {
   text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(105, 98, 98);
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 35px;
-    transition: 0,5s;
-  }
-   
-
-
-
-.proyectos{
-  text-decoration:none;
-font-weight: 600;
-font-size: 20px;
-color:#ffffff;
-padding-top:10px;
-padding-bottom:15px;
-padding-left:40px;
-padding-right:40px;
-background-color:rgb(0, 0, 0);
-border-color: rgb(105, 98, 98);
-border-width: 3px;
-border-style: solid;
-border-radius:35px;
-transition: transform 0.5s;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-
-.contacto{
-  text-decoration:none;
-font-weight: 600;
-font-size: 20px;
-color:#ffffff;
-padding-top:10px;
-padding-bottom:15px;
-padding-left:40px;
-padding-right:40px;
-background-color:rgb(0, 0, 0);
-border-color: rgb(105, 98, 98);
-border-width: 3px;
-border-style: solid;
-border-radius:35px;
-transition: transform 0.5s;
+.inicio:hover,
+.proyectos:hover,
+.contacto:hover {
+  background-color: #555555;
 }
- .photo img {
-    border-radius: 30%;
-    width: 100px;
-    height: 100px;
-    
-   
-    
-    
-  }
-  
-  
 
-  
- 
-  .textoSB{
-    font-size: 133%;
-    
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  }
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
+h1 {
+  font-size: 24px;
+}
 
-  
- 
-  h1 {
-    font-size: 3em;
-    
-    color: rgb(2, 2, 2);
-  }
-  
-  section {
-    background-color: gray;
-    padding: 40px;
-    box-shadow: 0 2px 4px black;
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .info-section, .education-section, .work-section, .skills-section {
-    display: flex;
-  }
-  
-  .info-item, .education-item, .work-item, .skill {
-    flex: 1;
-    margin-right: 40px;
-  }
-  
-  
-  
- 
-  
- 
+section {
+  margin-bottom: 30px;
+}
 
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.textoSB {
+  line-height: 1.5;
+}
+
+#idiomas {
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-right: 10px;
+}
+
+.img-idiomas {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.education-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.work-section {
+  display: flex;
+  justify-content: center;
+}
+
+.work-item {
+  margin: 0 10px;
+}
+
+.html-img,
+.css-img,
+.xml-img,
+.java-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
 .informacion {
-  background-color:  rgb(104, 95, 95);
-  padding: 10px;
-  text-align: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .titulo_info {
-  color: rgb(252, 252, 252);
-  font-size: 30px;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
-.texto_correo {
-  color: rgb(255, 253, 253);
-  font-size: 18px;
-  margin-top: 10px;
-
+.footer-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 10px;
 }
-.html-img{
-max-width: 40%;
-
-}
-
-.css-img{
-  max-width: 30%;
-  
-  }
-
-  .xml-img{
-    max-width: 40%;
-    
-    }
-    .java-img{
-      max-width: 40%;
-      border-radius: 30%;
-      transition: 0,5s;
-      
-      }
-      
-      .footer-img{
-        max-width: 5%;
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      #idiomas {
-        background-color: gray;
-        padding: 20px;
-      }
-      
-      #idiomas h2 {
-        margin-bottom: 10px;
-      }
-      
-      #idiomas ul {
-        list-style-type: none;
-      }
-      
-      #idiomas li {
-        display: inline-block;
-        margin-right: 10px;
-        
-      }
-      
-      #idiomas a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-      }
-      .img-idiomas{
-        max-width: 30px;
-       margin: 5px 100px 0 10px;
-      }
-
-      
-        
-
-     
-    
-        
-      
-      
-    
-  
-  
- 
-
-

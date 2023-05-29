@@ -1,74 +1,126 @@
-html{
-    background-image: url(/img/fondo-textura-hormigon-negro_53876-145151.webp);
-    padding-bottom: 100px;
+
+
+
+html {
+  background-color: #f2f2f2;
+  padding-bottom: 100px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
 }
+.menu-container {
+  display: flex;
+  align-items: center;
+}
 
-.botones{
-    padding:40px 0 ;
-    
+.menu-button {
+  padding: 18px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
 
-  }
-  .inicio{
-   
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 20px;
-    color:#ffffff;
-    padding-top:10px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-    background-color:rgb(0, 0, 0);
-    border-color: rgb(105, 98, 98);
-    border-width: 3px;
-    border-style: solid;
-    border-radius:35px;
-    }
-    .proyectos{
-        text-decoration:none;
-      font-weight: 600;
-      font-size: 20px;
-      color:#ffffff;
-      padding-top:10px;
-      padding-bottom:15px;
-      padding-left:40px;
-      padding-right:40px;
-      background-color:rgb(0, 0, 0);
-      border-color: rgb(105, 98, 98);
-      border-width: 3px;
-      border-style: solid;
-      border-radius:35px;
-      }
-      .contacto{
-        text-decoration:none;
-      font-weight: 600;
-      font-size: 20px;
-      color:#ffffff;
-      padding-top:10px;
-      padding-bottom:15px;
-      padding-left:40px;
-      padding-right:40px;
-      background-color:rgb(0, 0, 0);
-      border-color: rgb(105, 98, 98);
-      border-width: 3px;
-      border-style: solid;
-      border-radius:35px;
-      }
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 290px;
-        max-height: 230X;
-          background-color: rgba(21, 51, 218, 0.232);
-          margin-left: 10%;
-       
+.menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 21px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.menu-icon:nth-child(1) {
+  top: calc(50% - 4px);
+}
+
+.menu-icon:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon:nth-child(3) {
+  top: calc(50% + 4px);
+}
+
+.menu-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.menu-button:hover .menu-icon {
+  background-color: #ffffff;
+}
+
+.menu-select {
+  display: none;
+  padding: 10px;
+  width: 290;
+  background-color: #fff6f6;
+  border: 1px solid #050505;
+}
+.menu-select a {
+  display: block;
+  text-decoration: none;
+  color: #f6f2f2;
+  background-color: #736f6f;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+.menu-select a:hover {
+  background-color: #4c4242;
+}
+
+
+.container-top,
+.container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.container-top .card:first-child {
+  margin-right: 40px;
+}
+.container-bottom .card:first-child {
+  margin-right: 40px;
+}
+.left-buttons,
+.right-buttons {
+  display: flex;
+  
+}
+.inicio,
+.proyectos,
+.contacto {
+  text-decoration: none;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #000000;
+  border: none;
+  border-radius: 35px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.inicio:hover,
+.proyectos:hover,
+.contacto:hover {
+  background-color: #333333;
+}
+      
+
+      .container .card .poster{
+        flex-direction: row;
       }
       
       .card {
@@ -78,13 +130,11 @@ html{
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
       }
       
-      .card .poster {
-        position: relative;
-        overflow: hidden;
-      }
       
+  
       .card .poster::before {
         content: '';
         position: absolute;
@@ -149,20 +199,24 @@ html{
         display: flex;
         gap: 10px;
         margin-top: 10px;
+      
       }
       
 
       /*IMAGEN CONTACTO*/
       .card .details .cast ul li {
         list-style: none;
-        width: 44px;
-        height: 44px;
+        width: 42px;
+        height: 42px;
         overflow: hidden;
         border-radius: 50%;
-        border: 2px solid rgb(252, 198, 0);
+        border: 2px solid rgb(0, 151, 252);
+
+        background-size: cover;
       }
       
       .card .details .cast ul li img {
-        max-width: 100%;
+      max-width: 100%;
+        
       }
-      
+   
