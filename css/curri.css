@@ -147,7 +147,7 @@ textarea {
 }
 .imagen-perfil {
     position: absolute;
-    top: 49%;
+    top: 60%;
     right: 100px;
     transform: translateY(-50%);
     max-width: 50%;
@@ -273,7 +273,7 @@ background-color: #0c0b0b;
     padding: 13px 162px;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 500px;
+    margin-left: 423px;
   }
 
   
