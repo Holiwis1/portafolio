@@ -50,11 +50,3 @@ function confirmarReset() {
   ocultarConfirmacionReset();
 }
 
-function mostrarAlerta() {
-  Swal.fire({
-    icon: 'success',
-    title: 'Añadido correctamente',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}

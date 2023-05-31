@@ -97,3 +97,61 @@ button {
   background-color: red;
 color: #ffffff;
 }
+
+
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 39px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  
+  
+  text-decoration: none;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  
+  .navbar li a:hover {
+    color: lightseagreen 
+  }
+
+.btn-cv {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightseagreen;
+  color: #fffefe;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.btn-cv:hover {
+  background-color: #ddd;
+}
+
+.btn-cv:active {
+  background-color: #ccc;
+}
