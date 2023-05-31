@@ -150,7 +150,7 @@ textarea {
     top: 60%;
     right: 100px;
     transform: translateY(-50%);
-    max-width: 50%;
+    max-width: 100%;
   }
 
 .acerca {
