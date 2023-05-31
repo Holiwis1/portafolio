@@ -11,7 +11,7 @@ body {
 .perfil {
   background-color: #0c0b0b;
   color: #fff;
-  height: 610px;
+  height: 600px;
 }
 
 nav {
@@ -24,14 +24,6 @@ nav {
 .logo {
     font-size: 32px;
     
-  }
-  
-  .logo-img {
-    width: 50px; 
-    height: auto;
-    margin-top: 10px;
-    margin-right: 600px; 
-    border-radius: 30px;
   }
   
  
@@ -155,7 +147,7 @@ textarea {
 }
 .imagen-perfil {
     position: absolute;
-    top: 50%;
+    top: 49%;
     right: 100px;
     transform: translateY(-50%);
     max-width: 50%;
@@ -208,6 +200,7 @@ textarea {
     margin: 0;
     font-style: italic;
   text-transform: uppercase;
+  margin-bottom: 30px;
   }
   
   .idiomas li {
@@ -240,15 +233,24 @@ textarea {
     transition: width 0.3s ease;
     width: 0; 
   }
-.textoAcerca button {
-  background-color: lightseagreen;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 15px;
-}
+  .textoAcerca .button {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .textoAcerca .button:hover {
+    background-color: #008080;
+  }
 
 .servicio {
 background-color: #0c0b0b;
@@ -271,7 +273,7 @@ background-color: #0c0b0b;
     padding: 13px 162px;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 630px;
+    margin-left: 500px;
   }
 
   
@@ -391,7 +393,7 @@ footer p {
   margin: 0 10px;
   font-size: 24px;
 }
-.btn-mas-informacion{
+#btn-mas-informacion{
     background-color: #fff;
   color: lightseagreen;
   border: none;
@@ -403,25 +405,29 @@ footer p {
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
-.contacto .btn-mas-informacion:hover {
+.contacto #btn-mas-informacion:hover {
     background-color: #3d4544; 
   }
 
 #footer-info {
     display: none; 
-    
+    background-color: rgb(198, 192, 207);
+    padding: 1px 120px;
   }
  
 
-.abajo1 {
-  color: #fff;
-  margin-top: 10px;
-  font-size: 40px;
-}
-
-.abajo2 {
-  color: #fff;
-  margin-top: 15px;
-  font-size: 16px;
-}
+  .abajo1 {
+    color: #333333;
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .abajo2 {
+    color: #000000;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
 

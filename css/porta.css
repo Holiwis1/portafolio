@@ -7,7 +7,7 @@
 }
 
 .fondo{
-  background-image: url(/img/fondo-textura-hormigon-negro_53876-145151.webp);
+  background-color: rgb(3, 3, 3);
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .panel{
-  background-color: gray;
+  background-color: lightseagreen;
   height: 53%;
   width: 50%;
   display: flex;
@@ -32,8 +32,8 @@
 }
 
 .perfil{
-    height: 50%;
-    width: 30%;
+    height: 40%;
+    width: 40%;
   border-radius: 20%;
   border: 2px 2 px solid black;
   margin-top: 2vh;
@@ -70,11 +70,11 @@ h1:hover{
 
 a{
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   transition-duration: 1.5s;
 }
 a:hover{
-  color: #f28206 ;
+  color: #e5330f ;
   transition-duration: 0.3s;
 }
 
