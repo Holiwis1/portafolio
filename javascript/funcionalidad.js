@@ -11,9 +11,9 @@ logoLetters.forEach((letter) => {
 });
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Evitar el envío del formulario
+  event.preventDefault(); // Evitar el envio del formulario
 
-  // Mostrar pantalla emergente de confirmación
+  // Mostrar pantalla emergente de confirmacion
   document.getElementById("confirmation").style.display = "block";
 
   // Restablecer el formulario después de 3 segundos
@@ -37,18 +37,18 @@ idiomasItems.forEach((item) => {
   // Obtener el nivel del idioma
   const nivel = obtenerNivelIdioma(idiomaNombre.textContent);
 
-  // Al pasar el ratón por encima del elemento li
+  // Al pasar el raton por encima del elemento li
   item.addEventListener("mouseover", () => {
     nivelIndicador.style.width = `${nivel}%`;
   });
 
-  // Al quitar el ratón del elemento li
+  // Al quitar el raton del elemento li
   item.addEventListener("mouseout", () => {
     nivelIndicador.style.width = "0";
   });
 });
 
-// Función para obtener el nivel del idioma
+// Funcion para obtener el nivel del idioma
 function obtenerNivelIdioma(idioma) {
   let nivel = 0;
   switch (idioma) {
@@ -74,9 +74,9 @@ let currentIndex = 0;
 function mostrarCaja(index) {
   cajas.forEach((caja, i) => {
     if (i === index) {
-      caja.style.display = "block";
+      caja.style.display = "block";// Muestra la tarjeta si el indice coincide
     } else {
-      caja.style.display = "none";
+      caja.style.display = "none";// Oculta la tarjeta si el indice no coincide
     }
   });
 }
@@ -91,7 +91,7 @@ function pasarSiguiente() {
 
 mostrarCaja(currentIndex);
 
-// Evento  para el botón de siguiente
+
 
 const btnMasInformacion = document.getElementById("btn-mas-informacion");
 const footerInfo = document.getElementById("footer-info");
@@ -102,6 +102,7 @@ btnMasInformacion.addEventListener("click", () => {
   } else {
     footerInfo.style.display = "none";
   }
+  // Agrega un evento click adicional para desplazarse hacia elcontacto
   btnMasInformacion.addEventListener("click", () => {
     footerInfo.scrollIntoView({ behavior: "smooth" });
   });
