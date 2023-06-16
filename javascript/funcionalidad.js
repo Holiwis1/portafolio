@@ -10,17 +10,17 @@ logoLetters.forEach((letter) => {
   });
 });
 
-document.getElementById("myForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Evitar el envio del formulario
+document.getElementById("review-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita el envío del formulario
 
-  // Mostrar pantalla emergente de confirmacion
-  document.getElementById("confirmation").style.display = "block";
+  // Muestra el mensaje de confirmación y el gif
+  document.getElementById("confirmation-message").style.display = "block";
 
-  // Restablecer el formulario después de 3 segundos
-  setTimeout(function () {
-    document.getElementById("confirmation").style.display = "none";
-    document.getElementById("myForm").reset();
-  }, 3000);
+  // Simula un tiempo de espera antes de restablecer el formulario y ocultar el mensaje de confirmación
+  setTimeout(function() {
+    document.getElementById("review-form").reset(); // Restablece el formulario
+    document.getElementById("confirmation-message").style.display = "none"; // Oculta el mensaje de confirmación
+  }, 3000); // Espera 3 segundos (puedes ajustar el tiempo en milisegundos)
 });
 
 //FUNCION NIVELES
@@ -67,6 +67,8 @@ function obtenerNivelIdioma(idioma) {
 //funcion SLIDER
 const btnSiguiente = document.getElementById("btn-siguiente");
 btnSiguiente.addEventListener("click", pasarSiguiente);
+const btnAnterior = document.getElementById("btn-anterior");
+btnAnterior.addEventListener("click", pasarAnterior);
 const slider = document.querySelector(".caja");
 const cajas = Array.from(document.querySelectorAll(".tarjeta"));
 let currentIndex = 0;
@@ -74,9 +76,9 @@ let currentIndex = 0;
 function mostrarCaja(index) {
   cajas.forEach((caja, i) => {
     if (i === index) {
-      caja.style.display = "block";// Muestra la tarjeta si el indice coincide
+      caja.style.display = "block"; // Muestra la tarjeta si el indice coincide
     } else {
-      caja.style.display = "none";// Oculta la tarjeta si el indice no coincide
+      caja.style.display = "none"; // Oculta la tarjeta si el indice no coincide
     }
   });
 }
@@ -87,11 +89,15 @@ function pasarSiguiente() {
     currentIndex = 0;
   }
   mostrarCaja(currentIndex);
+}function pasarAnterior() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = cajas.length - 1;
+  }
+  mostrarCaja(currentIndex);
 }
 
 mostrarCaja(currentIndex);
-
-
 
 const btnMasInformacion = document.getElementById("btn-mas-informacion");
 const footerInfo = document.getElementById("footer-info");

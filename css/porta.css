@@ -17,8 +17,8 @@
 
 .panel{
   background-color: lightseagreen;
-  height: 53%;
-  width: 50%;
+  height: 70%;
+  width: 60%;
   display: flex;
   justify-content: center;
   border-radius: 3%;
@@ -33,7 +33,7 @@
 
 .perfil{
     height: 40%;
-    width: 40%;
+    width: 80%;
   border-radius: 20%;
   border: 2px 2 px solid black;
   margin-top: 2vh;
@@ -72,6 +72,7 @@ a{
   text-decoration: none;
   color: rgb(0, 0, 0);
   transition-duration: 1.5s;
+  
 }
 a:hover{
   color: #e5330f ;
@@ -85,7 +86,21 @@ a:hover{
   height: 20%;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: rgb(24, 27, 27);
+  color: #ffffff;
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
 
+.button:hover {
+  background-color: #845d5d;
+  color: lightseagreen;
+}
 
 
 

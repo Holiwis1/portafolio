@@ -11,7 +11,7 @@ body {
 .perfil {
   background-color: #0c0b0b;
   color: #fff;
-  height: 600px;
+  height: 411px;
 }
 
 nav {
@@ -44,13 +44,23 @@ nav ul li a {
   text-decoration: none;
 }
 .navbar li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .navbar li a:hover {
-    color: lightseagreen 
-  }
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: lightseagreen;
+  transform: scale(1.05);
+}
 
 .btn-cv {
   display: inline-block;
@@ -147,10 +157,11 @@ textarea {
 }
 .imagen-perfil {
     position: absolute;
-    top: 60%;
+    top: 35%;
     right: 100px;
     transform: translateY(-50%);
-    max-width: 100%;
+    max-width: 370px;
+    padding-left: 100px;
   }
 
 .acerca {
@@ -265,16 +276,28 @@ background-color: #0c0b0b;
   
 }
 
- #btn-siguiente {
-    background-color: lightseagreen;
-    color: #0f0e0e;
-    border: none;
-    border-radius:20px;
-    padding: 13px 162px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 423px;
-  }
+#btn-siguiente {
+  background-color: lightseagreen;
+  color: #0f0e0e;
+  border: none;
+  border-radius: 20px;
+  padding: 13px 100px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 630px;
+}
+
+#btn-anterior {
+  background-color: lightseagreen;
+  color: #0f0e0e;
+  border: none;
+  border-radius: 20px;
+  padding: 13px 100px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
 
   
 .caja {
@@ -282,13 +305,14 @@ background-color: #0c0b0b;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-left:100px;
   }
   
   .tarjeta {
-    height: 470px;
-    width: 365px;
+    height: 500px;
+    width: 400px;
     background-color: #191919;
-    padding: 10px 35px;
+    padding: 10px 30px;
     margin-bottom: 11px;
     border-radius: 20px;
     position: relative;
@@ -393,7 +417,7 @@ footer p {
   margin: 0 10px;
   font-size: 24px;
 }
-#btn-mas-informacion{
+#btn-mas-informacion,#btn-reseña{
     background-color: #fff;
   color: lightseagreen;
   border: none;
@@ -431,3 +455,15 @@ footer p {
     text-align: center;
   }
 
+  #reseña1 {
+    background-color: black;
+    text-align: center;
+  }
+
+  
+    
+  
+
+ 
+
+  
